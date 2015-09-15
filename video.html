@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- jQuery for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome for icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+
+    <!-- Wistia -->
+    <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js"></script>
+
+    <!-- Player Controls -->
+    <script src="./player.js"></script>
+  </head>
+  <body>
+    <!-- Here's the embed code for our video -->
+    <div id="wistia_9z0afs4cla" class="wistia_embed" style="width:640px;height:360px;">&nbsp;</div>
+
+    <!-- Here's the code for our skip and speed controls -->
+    <div class="text-center">
+      <ul class="nav nav-pills centered-pills" data-speed="1.5" data-name="1.5x" data-behavior="video-controls">
+
+        <!-- Skip Backwards Link -->
+        <li><a data-toggle="tooltip" data-behavior="skip-backward" title="Skip backward 30 seconds" href="#"><i class="fa fa-backward"></i></a></li>
+
+        <!-- Playback Speeds -->
+        <li class="dropdown">
+          <a role="button" data-toggle="dropdown" data-behavior="video-speed-button" href="#">Speed <span class="caret"></span></a>
+          <ul data-behavior="video-speed-dropdown" class="dropdown-menu" role="menu" aria-labelledby="playback_speed_drop">
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="0.5" data-name="0.5x" href="#">0.5x</a>
+              </li>
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="0.75" data-name="0.75x" href="#">0.75x</a>
+              </li>
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="1.0" data-name="1x" href="#">1x</a>
+              </li>
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="1.25" data-name="1.25x" href="#">1.25x</a>
+              </li>
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="1.5" data-name="1.5x" href="#">1.5x</a>
+              </li>
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="1.75" data-name="1.75x" href="#">1.75x</a>
+              </li>
+              <li role="presentation">
+                <a tabindex="-1" role="menuitem" data-speed="2.0" data-name="2x" href="#">2x</a>
+              </li>
+          </ul>
+        </li>
+
+        <!-- Skip Forwards Link -->
+        <li><a data-toggle="tooltip" data-behavior="skip-forward" title="Skip forward 30 Seconds" href="#"><i class="fa fa-forward"></i></a></li>
+      </ul>
+    </div>
+
+    <script>
+      wistiaEmbed = Wistia.embed("9z0afs4cla", {
+        videoFoam: true,
+      });
+
+
+      // Want your video to autoplay? Just add this after the Wistia.embed code!
+      //wistiaEmbed.play()
+    </script>
+  </body>
+</html>
