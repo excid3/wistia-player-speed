@@ -65,6 +65,7 @@ to, such as when they click on a thumbnail. This is an ideal user
 experience for everyone so they don't have videos playing in the
 background on random tabs.
 
-## Author
+## Help
 
-That's it! If you have any questions, create an issue or add
+That's it! If you have any questions, create an issue or send me an
+email at <chris@excid3.com>
